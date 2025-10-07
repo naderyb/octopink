@@ -38,7 +38,7 @@ export const clubsInfo: ClubInfo[] = [
   {
     name: "MS Club",
     description:
-      "MS club ALEEEEEED JE SAIS PAS QUOI METTRE!!!!!!!!",
+      "MS club est un club étudiant dédié au développement des soft skills des étudiants, en mettant l'accent sur la collaboration, la communication et la créativité.",
   },
 ];
 
