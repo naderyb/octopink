@@ -23,17 +23,22 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
     <nav className="fixed top-0 left-0 right-0 z-50  bg-white bg-opacity-20 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-center lg:justify-between h-16">
-          {/* Mobile Logo Container - Centered on small screens */}
-          <div className="flex items-center space-x-6 lg:hidden">
+          {/* Mobile Logo Container - Nexus left, MS Club center, IN2_ART right */}
+          <div className="flex items-center justify-between w-full lg:hidden pr-16">
             <img
               src="/nexus.png"
               alt="Nexus Club Logo"
-              className="h-14 w-20 object-contain"
+              className="h-12 w-16 object-contain"
             />
             <img
               src="/ms_club.png"
               alt="Microsoft Student Club Logo"
               className="h-14 w-14 object-contain"
+            />
+            <img
+              src="/IN2_ART.png"
+              alt="IN2_ART Logo"
+              className="h-126 w-20 object-contain"
             />
           </div>
 
@@ -42,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             <img
               src="/nexus.png"
               alt="Nexus Club Logo"
-              className="h-14 w-120 object-contain"
+              className="h-14 w-20 object-contain"
             />
           </div>
 
@@ -64,12 +69,17 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             </div>
           </div>
 
-          {/* Desktop Right Logo - MS Club */}
-          <div className="hidden lg:flex items-center space-x-2">
+          {/* Desktop Right Logos - MS Club and IN2_ART */}
+          <div className="hidden lg:flex items-center space-x-4">
             <img
               src="/ms_club.png"
               alt="Microsoft Student Club Logo"
-              className="h-16 w-120 object-contain"
+              className="h-16 w-16 object-contain"
+            />
+            <img
+              src="/IN2_ART.png"
+              alt="IN2_ART Logo"
+              className="h-24 w-24 object-contain"
             />
           </div>
 
