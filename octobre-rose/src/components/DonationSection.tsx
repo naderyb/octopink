@@ -89,7 +89,7 @@ const DonationSection: React.FC<DonationSectionProps> = ({ onNavigate }) => {
               </div>
               <h3 className="text-3xl font-bold text-blue-600 mb-2">59,000</h3>
               <p className="text-gray-600">
-                nouveaux cas chaque année
+                nouveaux cas chaque année en France
               </p>
             </div>
           </div>
