@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #374151;
+  background-color: #ffffff;
+}
+
+/* Custom pink ribbon background pattern */
+.pink-ribbon-bg {
+  background-image: url("/ruban.png"),
+    radial-gradient(
+      circle at 25% 25%,
+      rgba(249, 168, 212, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      rgba(252, 231, 243, 0.15) 0%,
+      transparent 50%
+    ),
+    linear-gradient(45deg, rgba(249, 168, 212, 0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(252, 231, 243, 0.05) 25%, transparent 25%);
+  background-size: 150px auto, 200px 200px, 300px 300px, 50px 50px, 50px 50px;
+  background-position: top right, 0 0, 100px 100px, 0 0, 25px 25px;
+  background-repeat: no-repeat, repeat, repeat, repeat, repeat;
+  background-attachment: fixed, fixed, fixed, fixed, fixed;
+}
+
+/* Progress bar animation */
+@keyframes progress-fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--progress-width);
+  }
+}
+
+.progress-bar {
+  animation: progress-fill 1s ease-out forwards;
+}
+
+/* Subtle hover animations */
+.hover-lift {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile menu animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu {
+  animation: slideDown 0.2s ease-out;
+}
+
+/* Fade in animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Pulse animation for important elements */
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(-45deg, #ec4899, #be185d, #db2777, #9d174d);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
