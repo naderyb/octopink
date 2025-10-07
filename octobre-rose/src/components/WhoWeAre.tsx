@@ -92,6 +92,23 @@ const WhoWeAre: React.FC<WhoWeAreProps> = ({ clubs }) => {
             <p className="text-gray-600 mb-6 leading-relaxed">
               {clubs[1].description}
             </p>
+
+            {/* IN2_ART Section */}
+            <div className="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <div className="flex items-center mb-3">
+                <img
+                  src="/IN2_ART.png"
+                  alt="in2art Logo"
+                  className="w-50 h-24 object-contain mr-3"
+                />
+                <h4 className="text-lg font-semibold text-gray-800">in2art</h4>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                in2art représente la dimension artistique et créative du MS
+                Club. Cette branche se consacre à l'expression artistique, au
+                design, et à la créativité.
+              </p>
+            </div>
           </div>
         </div>
 
