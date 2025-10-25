@@ -5,7 +5,7 @@ interface DonationProgressProps {
 }
 
 const DonationProgress: React.FC<DonationProgressProps> = ({
-  currentAmount = 15000,
+  currentAmount = 46000,
 }) => {
   const formatAmount = (amount: number) => {
     return new Intl.NumberFormat("fr-DZ", {
